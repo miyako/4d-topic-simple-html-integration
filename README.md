@@ -72,7 +72,7 @@ WEB SEND TEXT(JSON Stringify($data); "application/json")
 ```
 
 * goto method properties, enable "4D Tag and URL (4D Action)"
-<img src="https://github.com/user-attachments/assets/d135d5a2-92ff-456f-8f47-dc555bdceaea" width=200 height=auto />
+<img src="https://github.com/user-attachments/assets/d135d5a2-92ff-456f-8f47-dc555bdceaea" width=500 height=auto />
 
 * notice the change in icon 
 <img src="https://github.com/user-attachments/assets/db01ae55-93f8-4992-9552-16297d822bb5" width=100 height=auto />
