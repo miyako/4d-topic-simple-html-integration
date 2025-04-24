@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+      <div class="container-fluid">
+        <span class="navbar-brand">4D</span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+            <li class="nav-item">
+            </li>
+          </ul>
+            <input class="form-control me-2 my-query" type="search" placeholder="Search" aria-label="Search">
+        </div>
+      </div>
+    </nav>
+    <div id="my-list"><div>
+    <script>
+        var myList;
+        var myQuery;
+        function getstuff(query){
+            fetch('/4daction/getstuff/' + encodeURIComponent(query))
+            .then(response => response.json())
+            .then(data => {
+                showdata(data.stuff);
+            });
+            }
+        function showdata(data){
+            myList.innerHTML = '';
+                        
+            const table = document.createElement("table");
+            table.classList.add("table", "table-striped-columns");
+            const thead = document.createElement("thead");
+            const tr = document.createElement("tr");
+            const th = document.createElement("th");
+            const tbody = document.createElement("tbody");
+    
+            th.textContent = "stuff";
+            tr.appendChild(th);
+            thead.appendChild(tr);
+            table.appendChild(thead);
+
+            data.forEach((item, index) => {
+                const tr = document.createElement("tr");
+                const td = document.createElement("td");
+                td.textContent = item;
+                tr.appendChild(td);
+                tbody.appendChild(tr);
+            });
+            
+            table.appendChild(tbody);
+            myList.appendChild(table);
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            myList = document.querySelector('#my-list');
+            myQuery = document.querySelector('.my-query');
+            myQuery.addEventListener('change', function (event) {
+                getstuff(event.target.value);
+            });
+        });
+    </script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
