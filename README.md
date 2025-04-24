@@ -7,6 +7,9 @@ This tutorial explains how to
 * invoke that API from JavaScript
 * display result from that API in HTML
 
+> [!NOTE]
+> The REST API discussed in this article is the classic "web application feature", a.k.a. "4daction". it is not to be confused with the [REST API](https://developer.4d.com/docs/ja/category/rest-api) activated by exposing ORDA classes.
+
 ## Setup
 
 * create new 4D project
