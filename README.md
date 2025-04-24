@@ -8,7 +8,7 @@ This tutorial explains how to
 * display result from that API in HTML
 
 > [!NOTE]
-> The REST API discussed in this article is the classic "web application feature", a.k.a. "[URL form action](https://developer.4d.com/docs/WebServer/httpRequests#4daction)". it is not to be confused with the [REST API](https://developer.4d.com/docs/ja/category/rest-api) activated by exposing ORDA classes.
+> The REST API discussed in this article is the classic "[URL form action](https://developer.4d.com/docs/WebServer/httpRequests#4daction)". it is not to be confused with the [REST API](https://developer.4d.com/docs/ja/category/rest-api) activated by exposing ORDA classes.
 
 ## Setup
 
