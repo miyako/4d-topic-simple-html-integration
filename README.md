@@ -54,6 +54,8 @@ For ($i; 1; $length)
 End for 
 ```
 
+## REST API
+
 * create a project method `getstuff`
 * the project method `getstuff` queries the "Stuff" table and returns matching names as a JSON collection
 
@@ -78,6 +80,8 @@ WEB SEND TEXT(JSON Stringify($data); "application/json")
 <img src="https://github.com/user-attachments/assets/db01ae55-93f8-4992-9552-16297d822bb5" width=100 height=auto />
 
 * this means the project method `getstuff` can be invoked via the URL `'/4daction/getstuff/{query}`
+
+## Run
 
 * run > start web server
 <img src="https://github.com/user-attachments/assets/fd838b4a-1258-43ed-a416-25c482b7b2d8" width=500 height=auto />
