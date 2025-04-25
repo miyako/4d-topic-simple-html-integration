@@ -79,7 +79,7 @@ WEB SEND TEXT(JSON Stringify($data); "application/json")
 * notice the change in icon 
 <img src="https://github.com/user-attachments/assets/db01ae55-93f8-4992-9552-16297d822bb5" width=100 height=auto />
 
-* this means the project method `getstuff` can be invoked via the URL `'/4daction/getstuff/{query}`
+* this means the project method `getstuff` can be invoked via the URL `/4daction/getstuff/{query}`
 
 ## Run
 
